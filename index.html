@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ryuujins Store</title>
+</head>
+<body>
+    <header>
+        <h1>Ryuujins Store</h1>
+        <p>Jasa Setup Discord</p>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Daftar Produk</h2>
+            <div class="product">
+                <h3>💻 Pricelist Discord Setup</h3>
+                <p><strong>Basic Package:</strong> Rp35.000</p>
+                <p>Cocok untuk setup server dasar seperti mengatur role dan memberikan template server dasar.</p>
+                <button onclick="order('Basic Package', 35000)">Pesan Sekarang</button>
+            </div>
+            <div class="product">
+                <h3>🕒 Standar Package:</h3>
+                <p><strong>Rp65.000</strong></p>
+                <p>Pas untuk pengerjaan server dasar sekaligus dengan Setup Bot dan tambahan dekorasi channel bersama Setup role yang lebih kompleks.</p>
+                <button onclick="order('Standar Package', 65000)">Pesan Sekarang</button>
+            </div>
+            <div class="product">
+                <h3>🕒 Premium Package:</h3>
+                <p><strong>Rp110.000</strong></p>
+                <p>Ideal untuk Pengerjaan server biasa yang ingin menambahkan fitur tema khusus dengan bot yang fungsional seperti ticket dan reaction role tidak lupa dengan pengaturan permission yang detail dari kami.</p>
+                <button onclick="order('Premium Package', 110000)">Pesan Sekarang</button>
+            </div>
+            <div class="product">
+                <h3>🕒 Custom Package:</h3>
+                <p><strong>Rp160.000</strong></p>
+                <p>Pilihan tepat untuk customer yang ingin membuat server dari nol sesuai keinginan dan juga mendapat konsultasi penuh untuk design dan fungsi dari server dan juga dapat melakukan penyesuaian bot dan integrasi layanan dari pihak ketiga.</p>
+                <button onclick="order('Custom Package', 160000)">Pesan Sekarang</button>
+            </div>
+        </section>
+        <section id="receipt" class="hidden">
+            <h2>Struk Pembelian</h2>
+            <p id="receipt-details"></p>
+            <button onclick="downloadReceipt()">Download Struk</button>
+        </section>
+        <section id="payment" class="hidden">
+            <h2>Pilih Metode Pembayaran</h2>
+            <button onclick="pay('Gopay')">Gopay</button>
+            <button onclick="pay('Dana')">Dana</button>
+            <button onclick="pay('Transfer')">Transfer</button>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
